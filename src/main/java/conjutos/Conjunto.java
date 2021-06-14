@@ -10,7 +10,7 @@ public class Conjunto<T> {
     }
 
     public boolean inserir(T elemento) {
-        if(!contem(elemento)){
+        if(elemento!=null && !contem(elemento)){
             this.listaLigada.inserir(elemento);
             return true;
         }
@@ -18,7 +18,7 @@ public class Conjunto<T> {
     }
 
     public boolean inserirEm(int posicao, T elemento) {
-        if(!contem(elemento)){
+        if(elemento!=null && !contem(elemento)){
             this.listaLigada.inserirEm(posicao, elemento);
             return true;
         }
