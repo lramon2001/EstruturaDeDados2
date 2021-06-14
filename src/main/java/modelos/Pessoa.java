@@ -5,6 +5,9 @@ public class Pessoa {
 	private int id;
 	private String nome;
 
+	public Pessoa() {
+	}
+
 	public Pessoa(int id, String nome) {
 		super();
 		this.id = id;

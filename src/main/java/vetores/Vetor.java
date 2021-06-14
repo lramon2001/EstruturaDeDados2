@@ -1,4 +1,4 @@
-package br.com.treinaweb.estruturadados.vetores;
+package vetores;
 
 import java.util.Arrays;
 
