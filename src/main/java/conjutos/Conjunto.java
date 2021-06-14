@@ -9,12 +9,20 @@ public class Conjunto<T> {
         this.listaLigada = new ListaLigada<T>();
     }
 
-    public void inserir(T elemento) {
-        this.listaLigada.inserir(elemento);
+    public boolean inserir(T elemento) {
+        if(!contem(elemento)){
+            this.listaLigada.inserir(elemento);
+            return true;
+        }
+        return false;
     }
 
-    public void inserirEm(int posicao, T elemento) {
-        this.listaLigada.inserirEm(posicao, elemento);
+    public boolean inserirEm(int posicao, T elemento) {
+        if(!contem(elemento)){
+            this.listaLigada.inserirEm(posicao, elemento);
+            return true;
+        }
+          return false;
     }
 
     public T recuperar(int posicao) {
