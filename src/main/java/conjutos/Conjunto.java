@@ -1,0 +1,47 @@
+package conjutos;
+
+import listasligadas.ListaLigada;
+
+public class Conjunto<T> {
+    private ListaLigada<T> listaLigada;
+
+    public Conjunto() {
+        this.listaLigada = new ListaLigada<T>();
+    }
+
+    public void inserir(T elemento) {
+        this.listaLigada.inserir(elemento);
+    }
+
+    public void inserirEm(int posicao, T elemento) {
+        this.listaLigada.inserirEm(posicao, elemento);
+    }
+
+    public T recuperar(int posicao) {
+       return this.listaLigada.recuperar(posicao);
+    }
+
+    public boolean estaVazio() {
+        return this.listaLigada.estaVazia();
+    }
+
+    public int tamanho() {
+        return this.listaLigada.tamanho();
+    }
+
+    public boolean contem(T elemento) {
+        return this.listaLigada.contem(elemento);
+    }
+
+    public int indice(T elemento) {
+        return this.listaLigada.indice(elemento);
+    }
+
+    public void remover(int posicao) {
+        this.listaLigada.remover(posicao);
+    }
+
+    public void remover(T elemento) {
+        this.listaLigada.remover(elemento);
+    }
+}

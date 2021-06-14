@@ -1,6 +1,7 @@
-package br.com.treinaweb.estruturadados.filas;
+package filas;
 
-import br.com.treinaweb.estruturadados.listasligadas.ListaLigada;
+
+import listasligadas.ListaLigada;
 
 public class Fila<T> {
 

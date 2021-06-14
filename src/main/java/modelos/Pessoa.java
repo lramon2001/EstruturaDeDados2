@@ -1,4 +1,4 @@
-package br.com.treinaweb.estruturadados.modelos;
+package modelos;
 
 public class Pessoa {
 
