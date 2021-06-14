@@ -52,4 +52,11 @@ public class Conjunto<T> {
     public void remover(T elemento) {
         this.listaLigada.remover(elemento);
     }
+
+    @Override
+    public String toString() {
+        return "Conjunto{" +
+                "listaLigada=" + listaLigada +
+                '}';
+    }
 }
