@@ -24,4 +24,11 @@ public class TabelaEspalhamento<T> {
         return true;
     }
 
+    public void remover(T elemento){
+        int numeroEspalamento = gerarNumeroEspalhamento(elemento);
+        ListaLigada<T> categoria = elementos.recuperar(numeroEspalamento);
+        categoria.remover(elemento);
+    }
+
+
 }
