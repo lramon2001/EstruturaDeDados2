@@ -39,4 +39,12 @@ public class Mapa <K,V>{
         }
         throw new IllegalArgumentException(String.format("A chave %s não existe",chave));
   }
+  public void adicionar (K chave, V value){
+        if(this.contemChave(chave)){
+            this.remover(chave);
+        }
+        int numeroEspalhamento = this.gerarNumeroEspalhamento(chave);
+        ListaLigada<Associacao<K,V>> categoria = this.elementos.recuperar(numeroEspalhamento);
+        categoria.inserir(new Associacao<K,V>(chave,value));
+  }
 }
