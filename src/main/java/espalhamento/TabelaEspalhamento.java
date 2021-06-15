@@ -5,6 +5,7 @@ import listasligadas.ListaLigada;
 public class TabelaEspalhamento<T> {
     private ListaLigada<ListaLigada<T>> elementos;
     private int numeroCategorias=16;
+    private int tamanho;
     public TabelaEspalhamento(){
         elementos=new ListaLigada<ListaLigada<T>>();
         for(int i=0;i<this.numeroCategorias;i++){
@@ -21,6 +22,7 @@ public class TabelaEspalhamento<T> {
             return false;
         }
         categoria.inserir(elemento);
+        this.tamanho++;
         return true;
     }
 
@@ -28,7 +30,15 @@ public class TabelaEspalhamento<T> {
         int numeroEspalamento = gerarNumeroEspalhamento(elemento);
         ListaLigada<T> categoria = elementos.recuperar(numeroEspalamento);
         categoria.remover(elemento);
+        this.tamanho--;
     }
-
+    public int tamanho(){
+        return this.tamanho;
+    }
+  public boolean contem(T elemento){
+        int numeroEspalhamento = gerarNumeroEspalhamento(elemento);
+        ListaLigada<T> categoria = elementos.recuperar(numeroEspalhamento);
+        return categoria.contem(elemento);
+  }
 
 }
