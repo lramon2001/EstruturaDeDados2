@@ -1,61 +1,39 @@
 package conjutos;
 
+import espalhamento.TabelaEspalhamento;
 import listasligadas.ListaLigada;
 
 public class Conjunto<T> {
-    private ListaLigada<T> listaLigada;
+    private TabelaEspalhamento<T> elementos;
 
     public Conjunto() {
-        this.listaLigada = new ListaLigada<T>();
+        this.elementos = new TabelaEspalhamento<T>();
     }
 
     public boolean inserir(T elemento) {
-        if(elemento!=null && !contemMelhorado(elemento)){
-            this.listaLigada.inserir(elemento);
-            return true;
-        }
-        return false;
-    }
-
-    public boolean inserirEm(int posicao, T elemento) {
-        if(elemento!=null && !contemMelhorado(elemento)){
-            this.listaLigada.inserirEm(posicao, elemento);
-            return true;
-        }
-          return false;
-    }
-
-    public T recuperar(int posicao) {
-       return this.listaLigada.recuperar(posicao);
+        return elementos.inserir(elemento);
     }
 
     public boolean estaVazio() {
-        return this.listaLigada.estaVazia();
+        return this.elementos.tamanho() == 0;
     }
 
     public int tamanho() {
-        return this.listaLigada.tamanho();
+        return this.elementos.tamanho();
     }
 
     public boolean contem(T elemento) {
-        return this.listaLigada.contem(elemento);
+        return this.elementos.contem(elemento);
     }
 
-    public int indice(T elemento) {
-        return this.listaLigada.indice(elemento);
-    }
-
-    public void remover(int posicao) {
-        this.listaLigada.remover(posicao);
-    }
 
     public void remover(T elemento) {
-        this.listaLigada.remover(elemento);
+        this.elementos.remover(elemento);
     }
 
-    private boolean contemMelhorado(T elemento){
+   /* private boolean contemMelhorado(T elemento){
         for(int i=0;i<this.tamanho();i++){
-            T comparador = this.listaLigada.recuperar(i);
+            T comparador = this.elementos.recuperar(i);
             if(comparador.hashCode()== elemento.hashCode()){
                 return true;
             }
@@ -63,10 +41,12 @@ public class Conjunto<T> {
         return false;
     }
 
+    */
+
     @Override
     public String toString() {
         return "Conjunto{" +
-                "listaLigada=" + listaLigada +
+                "listaLigada=" + elementos +
                 '}';
     }
 }

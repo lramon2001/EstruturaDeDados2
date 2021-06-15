@@ -42,4 +42,10 @@ public class TabelaEspalhamento<T> {
         return categoria.contem(elemento);
   }
 
+    @Override
+    public String toString() {
+        return "TabelaEspalhamento{" +
+                "elementos=" + elementos +
+                '}';
+    }
 }
