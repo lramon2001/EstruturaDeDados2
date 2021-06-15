@@ -1,6 +1,7 @@
 package mains;
 
 
+import conjutos.Conjunto;
 import filas.Fila;
 import listasligadas.ListaDuplamenteLigada;
 import listasligadas.ListaLigada;
@@ -25,6 +26,7 @@ public class Main {
                             "4-Estudo de listas duplamente encadeadas\n"+
                             "5-Estudo de pilhas\n"+
                             "6-Estudo de filas\n"+
+                            "7-Estudo de conjuntos\n"+
                             "0-Sair";
 
             String strx = JOptionPane.showInputDialog(null,menu);
@@ -49,6 +51,9 @@ public class Main {
                 case 6:
                     fila();
                     break;
+                case 7:
+                    conjunto();
+                    break;
                 default:
                     JOptionPane.showMessageDialog(null,"OPÇÃO INVÁLIDA");
                     break;
@@ -59,6 +64,24 @@ public class Main {
         }
         while(x!=0);
     }
+
+    private static void conjunto() {
+        Conjunto<Pessoa> conjuntoPessoas = new Conjunto<Pessoa>();
+        JOptionPane.showMessageDialog(null,"O conjunto está vazio?\n" +
+                "R: "+conjuntoPessoas.estaVazio());
+        Pessoa raul = new Pessoa(36,"Raul Seixas");
+        JOptionPane.showMessageDialog(null,"Inserindo uma pessoa chamada Raul Seixas e id=36" +
+                "\n Foi possível adicioná-lo ao set? \n" +
+                "R:"+conjuntoPessoas.inserir(raul));
+        JOptionPane.showMessageDialog(null,conjuntoPessoas.toString());
+        Pessoa raul2 = new Pessoa(36,"Raul Seixas");
+        JOptionPane.showMessageDialog(null,"Tentando adicionar o Raul ao set novamente...\n" +
+                "Foi possível adicioná-lo ao set?" +
+                "\nR:"+conjuntoPessoas.inserir(raul2));
+        JOptionPane.showMessageDialog(null,conjuntoPessoas.toString());
+
+    }
+
     private static void gerenciamentoDeMemoria(){
         JOptionPane.showMessageDialog(null,"Fazendo o gerenciamento usando variáveis int");
         int a =Integer.parseInt(JOptionPane.showInputDialog("Digite o valor de a:"));

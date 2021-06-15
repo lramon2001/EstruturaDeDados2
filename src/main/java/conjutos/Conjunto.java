@@ -10,7 +10,7 @@ public class Conjunto<T> {
     }
 
     public boolean inserir(T elemento) {
-        if(elemento!=null && !contem(elemento)){
+        if(elemento!=null && !contemMelhorado(elemento)){
             this.listaLigada.inserir(elemento);
             return true;
         }
@@ -18,7 +18,7 @@ public class Conjunto<T> {
     }
 
     public boolean inserirEm(int posicao, T elemento) {
-        if(elemento!=null && !contem(elemento)){
+        if(elemento!=null && !contemMelhorado(elemento)){
             this.listaLigada.inserirEm(posicao, elemento);
             return true;
         }
@@ -51,6 +51,16 @@ public class Conjunto<T> {
 
     public void remover(T elemento) {
         this.listaLigada.remover(elemento);
+    }
+
+    private boolean contemMelhorado(T elemento){
+        for(int i=0;i<this.tamanho();i++){
+            T comparador = this.listaLigada.recuperar(i);
+            if(comparador.hashCode()== elemento.hashCode()){
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override
