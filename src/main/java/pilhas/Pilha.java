@@ -1,6 +1,7 @@
-package br.com.treinaweb.estruturadados.pilhas;
+package pilhas;
 
-import br.com.treinaweb.estruturadados.listasligadas.ListaDuplamenteLigada;
+
+import listasligadas.ListaDuplamenteLigada;
 
 public class Pilha<T> {
 

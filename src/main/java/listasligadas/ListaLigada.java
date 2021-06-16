@@ -1,4 +1,4 @@
-package br.com.treinaweb.estruturadados.listasligadas;
+package listasligadas;
 
 public class ListaLigada<T> {
 

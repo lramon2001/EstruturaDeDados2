@@ -1,9 +1,12 @@
-package br.com.treinaweb.estruturadados.modelos;
+package modelos;
 
 public class Pessoa {
 
 	private int id;
 	private String nome;
+
+	public Pessoa() {
+	}
 
 	public Pessoa(int id, String nome) {
 		super();
