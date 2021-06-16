@@ -5,6 +5,7 @@ import conjutos.Conjunto;
 import filas.Fila;
 import listasligadas.ListaDuplamenteLigada;
 import listasligadas.ListaLigada;
+import mapas.Mapa;
 import modelos.Pessoa;
 import pilhas.Pilha;
 import vetores.Vetor;
@@ -27,6 +28,7 @@ public class Main {
                             "5-Estudo de pilhas\n"+
                             "6-Estudo de filas\n"+
                             "7-Estudo de conjuntos\n"+
+                            "8-Estudo de mapas\n"+
                             "0-Sair";
 
             String strx = JOptionPane.showInputDialog(null,menu);
@@ -54,6 +56,9 @@ public class Main {
                 case 7:
                     conjunto();
                     break;
+                case 8:
+                    mapa();
+                    break;
                 default:
                     JOptionPane.showMessageDialog(null,"OPÇÃO INVÁLIDA");
                     break;
@@ -63,6 +68,23 @@ public class Main {
             }
         }
         while(x!=0);
+    }
+
+    private static void mapa() {
+        Mapa<String, Pessoa> mapaPessoas = new Mapa<String, Pessoa>();
+        JOptionPane.showMessageDialog(null,mapaPessoas.toString());
+        mapaPessoas.adicionar("legal", new Pessoa(1, "Augusto Licks"));
+        JOptionPane.showMessageDialog(null,mapaPessoas.toString());
+        JOptionPane.showMessageDialog(null,"Contém a chave legal?\n"+mapaPessoas.contemChave("legal"));
+        JOptionPane.showMessageDialog(null,"Contém a chave chata?\n"+mapaPessoas.contemChave("chata"));
+        mapaPessoas.adicionar("chata", new Pessoa(2, "Carlos Maltz"));
+        JOptionPane.showMessageDialog(null,"Contém a chave chata?\n"+mapaPessoas.contemChave("chata"));
+        mapaPessoas.adicionar("legal", new Pessoa(3, "Augusto Editado"));
+        JOptionPane.showMessageDialog(null,mapaPessoas.toString());
+        mapaPessoas.remover("chata");
+        JOptionPane.showMessageDialog(null,mapaPessoas.toString());
+        JOptionPane.showMessageDialog(null,mapaPessoas.recuperar("legal"));
+
     }
 
     private static void conjunto() {

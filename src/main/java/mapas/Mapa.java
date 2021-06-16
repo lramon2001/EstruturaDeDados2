@@ -4,18 +4,15 @@ import listasligadas.ListaLigada;
 
 
 public class Mapa<K, V> {
+
     private ListaLigada<ListaLigada<Associacao<K, V>>> elementos;
-    private int quantidadeCategorias;
+    private int quantidadeCategorias = 16;
 
     public Mapa() {
         this.elementos = new ListaLigada<ListaLigada<Associacao<K, V>>>();
         for (int i = 0; i < this.quantidadeCategorias; i++) {
             this.elementos.inserir(new ListaLigada<Associacao<K, V>>());
         }
-    }
-
-    private int gerarNumeroEspalhamento(K chave) {
-        return Math.abs(chave.hashCode() % this.quantidadeCategorias);
     }
 
     public boolean contemChave(K chave) {
@@ -43,13 +40,13 @@ public class Mapa<K, V> {
         throw new IllegalArgumentException(String.format("A chave %s não existe", chave));
     }
 
-    public void adicionar(K chave, V value) {
+    public void adicionar(K chave, V valor) {
         if (this.contemChave(chave)) {
             this.remover(chave);
         }
         int numeroEspalhamento = this.gerarNumeroEspalhamento(chave);
         ListaLigada<Associacao<K, V>> categoria = this.elementos.recuperar(numeroEspalhamento);
-        categoria.inserir(new Associacao<K, V>(chave, value));
+        categoria.inserir(new Associacao<K, V>(chave, valor));
     }
 
     public V recuperar(K chave) {
@@ -66,8 +63,10 @@ public class Mapa<K, V> {
 
     @Override
     public String toString() {
-        return "Mapa{" +
-                "elementos=" + elementos +
-                '}';
+        return "Mapa [elementos=" + elementos + "]";
+    }
+
+    private int gerarNumeroEspalhamento(K chave) {
+        return Math.abs(chave.hashCode() % this.quantidadeCategorias);
     }
 }

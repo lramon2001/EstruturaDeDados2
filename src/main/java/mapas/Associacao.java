@@ -4,9 +4,9 @@ public class Associacao <K,V> {
     private K chave;
     private V valor;
 
-    public Associacao(K chave, V value){
-        this.chave=chave;
-        this.valor=value;
+    public Associacao(K chave, V valor) {
+        this.chave = chave;
+        this.valor = valor;
     }
 
     public K getChave() {
@@ -15,5 +15,10 @@ public class Associacao <K,V> {
 
     public V getValor() {
         return valor;
+    }
+
+    @Override
+    public String toString() {
+        return "Associacao [chave=" + chave + ", valor=" + valor + "]";
     }
 }
