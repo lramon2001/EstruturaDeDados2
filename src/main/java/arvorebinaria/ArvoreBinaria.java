@@ -12,7 +12,7 @@ public class ArvoreBinaria <T>{
     public NoArvore<T> getRaiz(){
         return this.raiz;
     }
-    public void inserir(NoArvore<T>noReferencia, NoArvore<T> novoNo){
+    private void inserir(NoArvore<T>noReferencia, NoArvore<T> novoNo){
         if(novoNo.peso()>noReferencia.peso()){
             if(noReferencia.getNoDireito()==null){
                 noReferencia.setNoDireito(novoNo);
@@ -30,4 +30,16 @@ public class ArvoreBinaria <T>{
             }
         }
     }
+
+    public void inserir(NoArvore<T> novoNo){
+        novoNo.setNoEsquerdo(null);
+        novoNo.setNoDireito(null);
+        if(this.raiz==null){
+            this.raiz=novoNo;
+        }
+        else{
+            this.inserir(this.raiz,novoNo);
+        }
+    }
+
 }
