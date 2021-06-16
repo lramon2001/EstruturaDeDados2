@@ -1,7 +1,7 @@
 package arvorebinaria;
 
-public class NoArvore<T>{
-    private T elemento;
+public abstract class NoArvore<T>{
+    protected T elemento;
     private NoArvore<T> noEsquerdo;
     private NoArvore<T> noDireito;
 
@@ -31,7 +31,5 @@ public class NoArvore<T>{
         this.noDireito = noDireito;
     }
 
-    public int peso(){
-        return this.elemento.hashCode();
-    }
+    public abstract int peso();
 }
