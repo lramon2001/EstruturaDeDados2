@@ -1,6 +1,8 @@
 package mains;
 
 
+import arvorebinaria.ArvoreBinaria;
+import arvorebinaria.NoArvorePessoa;
 import conjutos.Conjunto;
 import filas.Fila;
 import listasligadas.ListaDuplamenteLigada;
@@ -29,6 +31,7 @@ public class Main {
                             "6-Estudo de filas\n"+
                             "7-Estudo de conjuntos\n"+
                             "8-Estudo de mapas\n"+
+                            "9-Arvore binária\n"+
                             "0-Sair";
 
             String strx = JOptionPane.showInputDialog(null,menu);
@@ -59,6 +62,9 @@ public class Main {
                 case 8:
                     mapa();
                     break;
+                case 9:
+                    arvore();
+                    break;
                 default:
                     JOptionPane.showMessageDialog(null,"OPÇÃO INVÁLIDA");
                     break;
@@ -68,6 +74,17 @@ public class Main {
             }
         }
         while(x!=0);
+    }
+
+    private static void arvore() {
+        ArvoreBinaria<Pessoa> arvoreBinaria = new ArvoreBinaria<Pessoa>();
+        JOptionPane.showMessageDialog(null,arvoreBinaria.toString());
+        arvoreBinaria.inserir(new NoArvorePessoa(new Pessoa(23,"A")));
+        JOptionPane.showMessageDialog(null,arvoreBinaria.toString());
+        arvoreBinaria.inserir(new NoArvorePessoa(new Pessoa(4,"B")));
+        JOptionPane.showMessageDialog(null,arvoreBinaria.toString());
+        arvoreBinaria.inserir(new NoArvorePessoa(new Pessoa(30,"C")));
+        JOptionPane.showMessageDialog(null,arvoreBinaria.toString());
     }
 
     private static void mapa() {
