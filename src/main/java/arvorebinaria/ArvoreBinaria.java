@@ -73,6 +73,25 @@ public class ArvoreBinaria <T>{
         return this.buscar(this.raiz,procurado);
     }
 
+    private void emOrdem(NoArvore<T> referencia){
+        if(referencia.getNoEsquerdo()!=null){
+            emOrdem(referencia.getNoEsquerdo());
+            System.out.println(referencia.getElemento().toString());
+            if(referencia.getNoDireito()!=null){
+                emOrdem(referencia.getNoDireito());
+            }
+        }
+        else{
+            System.out.println(referencia.getElemento().toString());
+            if(referencia.getNoDireito()!=null){
+                emOrdem(referencia.getNoDireito());
+            }
+        }
+    }
+
+    public void emOrdem(){
+        this.emOrdem(this.raiz);
+    }
 
     @Override
     public String toString() {
