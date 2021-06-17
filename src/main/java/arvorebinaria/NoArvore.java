@@ -31,5 +31,12 @@ public abstract class NoArvore<T>{
         this.noDireito = noDireito;
     }
 
+    @Override
+    public String toString() {
+        return (this.noEsquerdo == null ? "[(X)]" : "[(" + this.noEsquerdo.toString() + ")]") + "[("
+                + this.elemento.toString() + ")]"
+                + (this.noDireito == null ? "[(X)]" : "[(" + this.noDireito.toString() + ")]");
+    }
+
     public abstract int peso();
 }
