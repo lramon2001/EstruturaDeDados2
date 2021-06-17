@@ -2,6 +2,7 @@ package mains;
 
 
 import arvorebinaria.ArvoreBinaria;
+import arvorebinaria.NoArvore;
 import arvorebinaria.NoArvorePessoa;
 import conjutos.Conjunto;
 import filas.Fila;
@@ -85,6 +86,11 @@ public class Main {
         JOptionPane.showMessageDialog(null,arvoreBinaria.toString());
         arvoreBinaria.inserir(new NoArvorePessoa(new Pessoa(30,"C")));
         JOptionPane.showMessageDialog(null,arvoreBinaria.toString());
+        JOptionPane.showMessageDialog(null,"Iniciando os algoritmos de busca...");
+        NoArvore<Pessoa> pessoaCerta = new NoArvorePessoa(new Pessoa(30,"C"));
+        JOptionPane.showMessageDialog(null,arvoreBinaria.buscar(pessoaCerta));
+        arvoreBinaria.emOrdem();
+
     }
 
     private static void mapa() {
