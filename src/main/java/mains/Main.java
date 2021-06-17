@@ -89,7 +89,11 @@ public class Main {
         JOptionPane.showMessageDialog(null,"Iniciando os algoritmos de busca...");
         NoArvore<Pessoa> pessoaCerta = new NoArvorePessoa(new Pessoa(30,"C"));
         JOptionPane.showMessageDialog(null,arvoreBinaria.buscar(pessoaCerta));
+        System.out.println("*** EM ORDEM ***");
         arvoreBinaria.emOrdem();
+        System.out.println("*** PRE ORDEM ***");
+        arvoreBinaria.preOrdem();
+
 
     }
 
