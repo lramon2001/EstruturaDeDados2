@@ -53,6 +53,15 @@ estrutura de dados especial, que associa chaves de pesquisa a valores. Seu objet
 rápida e obter o valor desejado. É algumas vezes traduzida como tabela de escrutínio.
 ```
 ## Maps / Mapas
+```
+Os mapas são estruturas de dados que são chamadas de estruturas associativas. Estas estruturas possuem esse nome pois permitem associar
+um valor de acesso a um determinado elemento.
+Você pode imaginar os mapas como sendo um dicionário. Se você quiser saber o significado de uma palavra, você procura a palavra desejada 
+no dicionário. Após localizar a palavra, você conseguirá o acesso ao seu significado.
+Veja que no exemplo acima temos a demonstração clássica de uma estrutura associativa no estilo de um mapa. Você tem uma chave, que é a 
+palavra desejada, e um valor associado, no caso, o significado da palavra. Perceba também o fato de que uma palavra não aparece de maneira 
+repetida em um dicionário. Essa mesma regra vale para os mapas: as chaves em um mapa não podem ser duplicadas.
+```
 
 
 ## History / História
