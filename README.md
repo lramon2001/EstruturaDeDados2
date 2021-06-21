@@ -26,6 +26,18 @@
 - Implementing key search and element removal / Implementando a pesquisa por chaves e remoção de elementos;
 - Entering and retrieving values from a map / Inserindo e recuperando valores de um mapa;
 
+## Binary Tree / Árvore Binária
+- What are binary trees? / O que são árvores binárias?;
+- Defining the most basic structure of a binary tree: the node / Definindo a estrutura mais básica de uma árvore binária: o nó;
+- Insertion of nodes and definition of the root of a binary tree / Inserção de nós e definição da raiz de uma árvore binária;
+- Implementing recursive algorithms in the process of inserting nodes in a binary tree / Implementando algoritmos recursivos no processo de inserção de nós em uma árvore binária;
+- Implementing a recursive search on binary trees / Implementando uma busca recursiva em árvores binárias;
+- Traversing binary trees: "in order" algorithm / Travessia de árvores binárias: algoritmo "em ordem";
+- Traversing binary trees: "pre-order" algorithm / Travessia de árvores binárias: algoritmo "pré ordem" ;
+- Traversing binary trees: "post-order" algorithm / Travessia de árvores binárias: algoritmo "pós ordem";
+- Calculating the height of a binary tree / Calculando a altura de uma árvore binária.
+
+
 ## History / História
 - See [Commit changes](https://github.com/lramon2001/EstruturaDeDados2/commits/main) for details.
 
