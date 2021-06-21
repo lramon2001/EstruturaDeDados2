@@ -95,7 +95,7 @@ public class Main {
         arvoreBinaria.preOrdem();
         System.out.println("*** POS ORDEM ***");
         arvoreBinaria.posOrdem();
-
+        JOptionPane.showMessageDialog(null,);
 
 
     }

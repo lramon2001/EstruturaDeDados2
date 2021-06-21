@@ -127,6 +127,18 @@ public class ArvoreBinaria <T>{
     public void posOrdem(){
         this.posOrdem(this.raiz);
     }
+    private int altura(NoArvore<T> referencia){
+        if(referencia== null){
+
+        }
+        int alturaDireita = altura(referencia.getNoDireito());
+        int alturaEsquerda = altura(referencia.getNoEsquerdo());
+        return alturaDireita>alturaEsquerda ? alturaDireita +1 : alturaEsquerda +1;
+    }
+
+    public int altura(){
+        return this.altura(this.raiz);
+    }
 
     public void preOrdem (){
         this.preOrdem(this.raiz);
