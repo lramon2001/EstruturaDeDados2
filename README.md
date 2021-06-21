@@ -49,7 +49,7 @@ Há uma variedade de estratégias para verificação de duplicidade dos itens em
 ```
 Em ciência da computação, uma tabela de dispersão (também conhecida por tabela de espalhamento ou tabela hash, do inglês hash) é uma estrutura de dados especial, que associa chaves de pesquisa a valores. Seu objetivo é, a partir de uma chave simples, fazer uma busca rápida e obter o valor desejado. É algumas vezes traduzida como tabela de escrutínio.
 ```
-![gif]()
+![gif](https://github.com/lramon2001/EstruturaDeDados2/blob/main/hashtable.gif)
 ## History / História
 - See [Commit changes](https://github.com/lramon2001/EstruturaDeDados2/commits/main) for details.
 
