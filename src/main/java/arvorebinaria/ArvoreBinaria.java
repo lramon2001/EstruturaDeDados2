@@ -124,6 +124,9 @@ public class ArvoreBinaria <T>{
 
         }
     }
+    public void posOrdem(){
+        this.posOrdem(this.raiz);
+    }
 
     public void preOrdem (){
         this.preOrdem(this.raiz);
