@@ -107,6 +107,23 @@ public class ArvoreBinaria <T>{
         }
 
     }
+    private void posOrdem(NoArvore<T> referencia){
+        if(referencia.getNoEsquerdo()!=null){
+            posOrdem(referencia.getNoEsquerdo());
+            if(referencia.getNoDireito()!=null){
+                posOrdem(referencia.getNoDireito());
+            }
+            System.out.println(referencia.getElemento().toString());
+        }
+        else{
+            if(referencia.getNoDireito()!=null){
+                posOrdem(referencia.getNoDireito());
+            }else{
+                System.out.println(referencia.getElemento().toString());
+            }
+
+        }
+    }
 
     public void preOrdem (){
         this.preOrdem(this.raiz);
