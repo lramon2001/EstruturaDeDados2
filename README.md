@@ -7,6 +7,12 @@
 > :books: **Uma abordagem em java sobre um tema recorrente na ciência da computação : Estrutura de Dados.**
 
 ## Menu / Ementa
+### Sets / Conjuntos
+- What are sets? / O que são os sets?
+- Defining what a set is / Definindo o que é um set
+- Implementation of all methods of the class / Implementação de todos os métodos da classe
+- Optimization of insertion methods / Otimização de métodos de inserção 
+
 ## History / História
 - See [Commit changes](https://github.com/lramon2001/EstruturaDeDados2/commits/main) for details.
 
