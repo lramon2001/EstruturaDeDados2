@@ -19,14 +19,14 @@
 - Implementing the features of removal and verification of the existence of elements in a hashtable / Implementando as funcionalidades de remoção e de verificação de existência de elementos em uma tabela de espalhamento;
 - Optimizing the data structure of sets with spreading tables / Otimizando a estrutura de dados de sets com tabelas ds espalhamento.
 
-## Maps / Mapas
+### Maps / Mapas
 - Defining what maps are / Definindo o que são mapas;
 - Defining the associative structure / Definindo a estrutura associativa;
 - Optimizing maps with hashtables / Otimizando mapas com tabelas de espalhamento;
 - Implementing key search and element removal / Implementando a pesquisa por chaves e remoção de elementos;
 - Entering and retrieving values from a map / Inserindo e recuperando valores de um mapa;
 
-## Binary Tree / Árvore Binária
+### Binary Tree / Árvore Binária
 - What are binary trees? / O que são árvores binárias?;
 - Defining the most basic structure of a binary tree: the node / Definindo a estrutura mais básica de uma árvore binária: o nó;
 - Insertion of nodes and definition of the root of a binary tree / Inserção de nós e definição da raiz de uma árvore binária;
@@ -37,6 +37,14 @@
 - Traversing binary trees: "post-order" algorithm / Travessia de árvores binárias: algoritmo "pós ordem";
 - Calculating the height of a binary tree / Calculando a altura de uma árvore binária.
 
+## Sets / Conjuntos
+```
+Sets são estruturas de dados que agem como se fossem listas ligadas ou listas duplamente ligadas, porém elas possuem uma característica importante: elas não permitem elementos duplicados.
+
+Quando os sets recebem um elemento duplicado para ser inserido, o conteúdo do set não é modificado e nenhuma exceção é lançada.
+
+Há uma variedade de estratégias para verificação de duplicidade dos itens em um set. A abordagem pode ser mais simples, como em uma busca linear (algoritmo mais dispendioso) até uma verificação baseada no hash code dos objetos.
+```
 
 ## History / História
 - See [Commit changes](https://github.com/lramon2001/EstruturaDeDados2/commits/main) for details.
