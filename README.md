@@ -63,7 +63,13 @@ Veja que no exemplo acima temos a demonstração clássica de uma estrutura asso
 palavra desejada, e um valor associado, no caso, o significado da palavra. Perceba também o fato de que uma palavra não aparece de maneira 
 repetida em um dicionário. Essa mesma regra vale para os mapas: as chaves em um mapa não podem ser duplicadas.
 ```
+## Binary Tree / Árvore Binária
 
+```
+Árvores binárias são estruturas de dados hierárquicas que armazenam os elementos de maneira classificada.Árvores binárias são constituídas
+por um enlace de outra estrutura: os nós. Os nós são caracterizados por duas informações: o valor, que corresponde ao elemento a ser 
+armazenado, e o peso. O peso do nó é utilizado para categorizar e direcionar o nó dentro da árvore binária.
+```
 
 ## History / História
 - See [Commit changes](https://github.com/lramon2001/EstruturaDeDados2/commits/main) for details.
