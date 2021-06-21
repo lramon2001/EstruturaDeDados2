@@ -64,7 +64,7 @@ palavra desejada, e um valor associado, no caso, o significado da palavra. Perce
 repetida em um dicionário. Essa mesma regra vale para os mapas: as chaves em um mapa não podem ser duplicadas.
 ```
 ## Binary Tree / Árvore Binária
-![gif]()
+![gif](https://github.com/lramon2001/EstruturaDeDados2/blob/main/binaryTree.gif)
 
 ```
 Árvores binárias são estruturas de dados hierárquicas que armazenam os elementos de maneira classificada.Árvores binárias são constituídas
