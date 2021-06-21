@@ -19,6 +19,13 @@
 - Implementing the features of removal and verification of the existence of elements in a hashtable / Implementando as funcionalidades de remoção e de verificação de existência de elementos em uma tabela de espalhamento;
 - Optimizing the data structure of sets with spreading tables / Otimizando a estrutura de dados de sets com tabelas ds espalhamento.
 
+## Maps / Mapas
+- Defining what maps are / Definindo o que são mapas;
+- Defining the associative structure / Definindo a estrutura associativa;
+- Optimizing maps with hashtables / Otimizando mapas com tabelas de espalhamento;
+- Implementing key search and element removal / Implementando a pesquisa por chaves e remoção de elementos;
+- Entering and retrieving values from a map / Inserindo e recuperando valores de um mapa;
+
 ## History / História
 - See [Commit changes](https://github.com/lramon2001/EstruturaDeDados2/commits/main) for details.
 
