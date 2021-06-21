@@ -93,6 +93,9 @@ public class Main {
         arvoreBinaria.emOrdem();
         System.out.println("*** PRE ORDEM ***");
         arvoreBinaria.preOrdem();
+        System.out.println("*** POS ORDEM ***");
+        arvoreBinaria.posOrdem();
+
 
 
     }
