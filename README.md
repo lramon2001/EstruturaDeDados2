@@ -53,6 +53,7 @@ estrutura de dados especial, que associa chaves de pesquisa a valores. Seu objet
 rápida e obter o valor desejado. É algumas vezes traduzida como tabela de escrutínio.
 ```
 ## Maps / Mapas
+![gif](https://github.com/lramon2001/EstruturaDeDados2/blob/main/map.gif)
 ```
 Os mapas são estruturas de dados que são chamadas de estruturas associativas. Estas estruturas possuem esse nome pois permitem associar
 um valor de acesso a um determinado elemento.
